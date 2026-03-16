@@ -46,7 +46,9 @@
     <div class="container">
       <h4>I'm Yeongtaek Noh</h4>
       <h2 class="active"><span></span></h2>
-      <button class="download" data-animation-scroll="true" data-target="#about">About Me</button>
+      <a href="https://www.dropbox.com/scl/fi/00sebienhsdnisl15oi61/.pdf?rlkey=qn44eqo2lpx5uxdlpw14melzb&st=x5q54xzd&dl=0" target="_blank">
+        <button class="download"> 이력서 확인하기</button>
+      </a>
       <button class="mouse"><i class="fa-solid fa-computer-mouse"></i></button>
     </div>
   </main>
@@ -66,17 +68,17 @@
           <h3>안녕하세요, <strong>저는 노영택입니다.</strong></h3>
           <p>패션 모델과 엔터테인먼트 회사에서 근무하다가 우연한 계기로 개발에 몸담고 싶은 흥미를 느껴 Kotlin과 Dart를 기반으로 사용자 경험을 만드는 안드로이드 개발자의 길로 들어서게 되었습니다.</p>
           <p></p>
-          <p>저는 동료와의 적극적인 소통을 통해 복잡한 문제를 함께 해결하는 과정이 좋습니다. 새로운 기술을 학습하고 프로젝트에 직접 적용하는데 보람을 느끼며, 특히 문제 해결 과정 자체의 해결하는 과정을 즐기는 끈기 있고 멋있는 개발자가 되고 싶습니다!  </p>
+          <p>저는 동료와의 적극적인 소통을 통해 복잡한 문제를 함께 해결하는 과정이 좋습니다. 새로운 기술을 학습하고 프로젝트에 직접 적용하는데 보람을 느끼며, 특히 문제 해결 과정 자체의 해결하는 과정을 즐기는 끈기 있고 멋있는 개발자가 되고 싶습니다. 😎  </p>
           <div class="social">
-            <a href="https://github.com/NohYeongtaek?tab=repositories" target="_blank">
+            <a href="https://github.com/NohYeongtaek" target="_blank">
               <i class="fa-brands fa-github"></i>
             </a>
             <a href="https://www.notion.so/23f509143ada8090ac33dd96908edad4?source=copy_link" target="_blank">
               <i class="fa-brands fa-notion"></i>
             </a>
-            <a href="https://www.instagram.com/oldtag2" target="_blank">
+            <!-- <a href="https://www.instagram.com/oldtag2" target="_blank">
               <i class="fa-brands fa-instagram"></i>
-            </a>
+            </a> -->
           </div>
         </div>
       </div>
@@ -93,29 +95,56 @@
       <div class="do-me">                
         <div class="do-inner">
           <div class="icon">
-            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-android"></i>
           </div>
           <div class="content">
-            <h3>HTML5</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo culpa magni laboriosam sit excepturi quibusdam adipisci, vero debitis?</p>
+            <h3>Kotlin</h3>
+            <p>Jetpack Compose, XML을 사용한<br>안드로이드 앱 개발</p>
           </div>
         </div>        
         <div class="do-inner">
           <div class="icon">
-            <i class="fa-brands fa-css3-alt"></i>        
+            <i class="fa-brands fa-flutter"></i>        
           </div>
           <div class="content">
-            <h3>CSS3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo culpa magni laboriosam sit excepturi quibusdam adipisci, vero debitis?</p>
+            <h3>Flutter</h3>
+            <p>크로스 플랫폼을 이용하여<br>Android, iOS, web 개발과 네이티브와의 연결</p>
           </div>
         </div>
         <div class="do-inner">
           <div class="icon">
-            <i class="fa-brands fa-bootstrap"></i>
+            <i class="fa-brands fa-github"></i>
           </div>
           <div class="content">
-            <h3>BootStrap v5.0</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo culpa magni laboriosam sit excepturi quibusdam adipisci, vero debitis?</p>
+            <h3>GitHub</h3>
+            <p>Git과 GitHub을 사용한<br>코드 관리와 협업</p>
+          </div>
+        </div>
+        <div class="do-inner">
+          <div class="icon">
+            <i class="fa-solid fa-layer-group"></i>
+          </div>
+          <div class="content">
+            <h3>MVVM</h3>
+            <p>Model-View-ViewModel에 대한 이해</p>
+          </div>
+        </div>
+        <div class="do-inner">
+          <div class="icon">
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+          </div>
+          <div class="content">
+            <h3>Social Login</h3>
+            <p>다양한 소셜 미디어 계정을 사용한<br>로그인 기능</p>
+          </div>
+        </div>
+        <div class="do-inner">
+          <div class="icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <div class="content">
+            <h3>New Feature & Code Review</h3>
+            <p>적극적으로 새로운 기능 추가와 기존 코드를 개선</p>
           </div>
         </div>
       </div>
@@ -134,39 +163,104 @@
       </div>
       <div class="portfolio-me">
         <div class="portfolio-inner">
-          <img src="images/mock1.png" alt="">
-          <strong>BRANDING</strong>
-          <h3>Package Design</h3>
+          <div class="portfolio-item"> 
+            <img src="images/mock1.png" alt="Ruach Film">
+            <strong>APP</strong>
+             <h3>Ruach Film</h3>
+            <div class="portfolio-caption">
+              <div class="tags">
+                <span>Kotlin</span>
+                <span>XML</span>
+                <span>Retrofit2</span>
+                <span>RecyclerView</span>
+                <span>Paging3</span>
+                <span>ViewPager2</span>
+                <span>GSON</span>
+              </div>
+              <div class="portfolio-created">
+              <span>2026.02 - 2026.03</span>
+              </div>
+            </div>
+        </div> </div>
+        <div class="portfolio-inner">
+          <div class="portfolio-item"> <img src="images/mock2.png" alt="new_bie">
+            <strong>APP</strong>
+            <h3>new_bie</h3>
+            <div class="portfolio-caption">
+              <div class="tags">
+                <span>Flutter</span>
+                <span>Kotlin</span>
+                <span>Compose</span>
+                <span>Migrationing</span>
+                <span>MVVM</span>
+                <span>Supabase</span>
+                <span>EventBus</span>
+                <span>Rest API</span>
+                <span>Social Login</span>
+              </div>
+              <div class="portfolio-created">
+              <span>2025.10 - 2025.11</span>
+              </div>
+            </div>
+        </div> </div>
+        <div class="portfolio-inner">
+          <div class="portfolio-item"> <img src="images/mock3.png" alt="poem">
+                  <strong>APP</strong>
+              <h3>poem</h3>
+            <div class="portfolio-caption">
+              <div class="tags">
+                <span>Kotlin</span>
+                <span>Compose</span>
+                <span>StateFlow</span>
+                <span>Coroutines</span>
+                <span>Navigation</span>
+                <span>PostgreSQL</span>
+                <span>Supabase</span>
+                <span>UIbakery</span>
+              </div>
+              <div class="portfolio-created">
+              <span>2025.09 - 2025.10</span>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="portfolio-inner">
-          <img src="images/mock2.png" alt="">
-          <strong>DEVELOPMENT</strong>
-          <h3>Tablet App Dev</h3>
+          <div class="portfolio-item"> <img src="images/mock4.png" alt="bidbird">
+             <strong>APP</strong>
+              <h3>bidbird</h3>
+            <div class="portfolio-caption">
+              <div class="tags">
+                <span>Flutter</span>
+                <span>Social Login</span>
+                <span>Real-time</span>
+                <span>CoachMark</span>
+                <span>GoRouter</span>
+                <span>.env</span>
+                <span>CA</span>
+                <span>Portone</span>
+                <span>Rest API</span>
+                <span>Supabase</span>
+                <span>FCM</span>
+                <span>Cloudinary</span>
+              </div>
+              <div class="portfolio-created">
+              <span>2025.11 - 2026.01</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="portfolio-inner">
-          <img src="images/mock3.png" alt="">
-          <strong>MARKETING</strong>
-          <h3>Coka Cola </h3>
-        </div>
-        <div class="portfolio-inner">
-          <img src="images/mock4.png" alt="">
-          <strong>APP</strong>
-          <h3>FaceBook Clone</h3>
-        </div>
-        <div class="portfolio-inner">
-          <img src="images/mock5.png" alt="">
-          <strong>APP</strong>
-          <h3>Netflix Clone</h3>
-        </div>
-        <div class="portfolio-inner">
-          <img src="images/mock6.png" alt="">
-          <strong>WEB</strong>
-          <h3>FirmBee Web</h3>
+        <div class="portfolio-inner no-slide">
+          <a href="https://www.notion.so/23f509143ada8009a3aee53ae6e6d0f1?v=2ed509143ada806fb280000c5f77208a&source=copy_link" target="_blank">
+          <div class="portfolio-item"> <img src="images/mock5.png" alt="Today I Learned">
+             <strong>DEVELOPMENT</strong>
+              <h3>Today I Learned</h3>
+          </a>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- //end PortFolio -->
+  <!-- //end PortFolio -->\
    <!-- Contact With Me -->
    <section id="contact" class="contact">
     <div class="container">
@@ -182,7 +276,7 @@
             </div>
             <div class="info-text">
               <h3>phone</h3>
-              <p>010-2222-1111</p>
+              <p>010-7757-4823</p>
             </div>
           </div>
           <div class="card">
@@ -191,7 +285,7 @@
             </div>
             <div class="info-text">
               <h3>email</h3>
-              <p>sucoding@naver.com</p>
+              <p>yt873588@gmail.com</p>
             </div>
           </div>
           <div class="card">
@@ -200,11 +294,11 @@
             </div>
             <div class="info-text">
               <h3>address</h3>
-              <p>Samseong-ro, Gangnam-gu, Seoul, Republic of Korea</p>
+              <p>경기도 성남시 중원구 은행동 700</p>
             </div>
           </div>
         </div>
-        <div class="right">
+        <!-- <div class="right">
           <form action="#">
             <div class="form-group">
               <label for="name">name</label>
@@ -220,7 +314,7 @@
             </div>
             <button>send</button>
           </form>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>

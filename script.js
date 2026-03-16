@@ -11,7 +11,7 @@
       setTimeout(writeTxt, Math.floor(Math.random() * 100));
     }else{
       currentTxt = spanEl.textContent.split("");
-      setTimeout(deleteTxt, 3000);
+      setTimeout(deleteTxt, 1500);
     }
   }
   function deleteTxt(){
@@ -66,3 +66,26 @@ for(let i = 0; i < scollMoveEl.length; i++){
   });
 }
 /* End move.js */
+
+/* main_image.js */
+/* 메인 이미지 배경 변경 */
+const images = [
+  'images/me.jpg',
+  'images/me5.jpg',
+  'images/me2.jpg',
+  'images/me6.jpg',
+  'images/me3.jpg',
+  'images/me4.jpg',
+]
+let currentIndex = 0;
+const mainSection = document.querySelector('main');
+
+function changeBackgroundImage() {
+  mainSection.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('${images[currentIndex]}')`;
+  currentIndex = (currentIndex + 1) % images.length; // 다음 이미지로 인덱스 변경
+}
+
+changeBackgroundImage(); // 초기 배경 이미지 설정
+
+setInterval(changeBackgroundImage, 3000); // 5초마다 배경 이미지 변경
+/* End main_image.js */
