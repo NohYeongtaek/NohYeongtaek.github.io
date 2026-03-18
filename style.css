@@ -13,8 +13,10 @@ li{
   list-style:none;
 }
 .container{
-  width:1140px;
+  max-width:1140px;
+  width:100%;
   margin:0 auto;
+  padding:0 20px;
 }
 header{
   position:fixed;
@@ -294,21 +296,25 @@ section.portfolio::after{
   display:block;
   clear:both;
 }
+
+section.portfolio .portfolio-me{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
 /* portfolio-inner 사각형 꾸미기 */
 section.portfolio .portfolio-inner{
-  width:30%;
-  margin-right:5%;
+  width:calc(33.333% - 14px);
+  margin-right:0;
   padding:0;
-  float:left;
+  float:none;
   background-color:#f8f8f8;
   margin-bottom:3rem;
   overflow: hidden;
   position: relative;
 }
-/* 3번째마다 margin-right 0 적용 */
-section.portfolio .portfolio-inner:nth-child(3n){
-   margin-right:0;
-}
+
 /* --- 마우스 호버 효과를 위한 추가 코드 --- */
 
 /* 움직일 내용물 전체를 감싸는 아이템 */
@@ -482,7 +488,6 @@ section.contact .contact-me::after{
 section.contact .contact-me .left{
   display: flex;
   width:100%;
-  height: 200px;
   justify-content: space-between; /* 카드들 사이 간격을 일정하게 */
   gap: 1.5rem; /* 카드 사이의 여백 */
 }
@@ -660,6 +665,22 @@ section.contact .contact-me .right button{
     width:100%; /* 48% -> 100% */
     margin-right: 0; /* margin 초기화 */
   }
+
+  section .about-self{
+    flex-direction: column;
+    text-align:center;
+    gap:2rem;
+  }
+
+  section.contact .contact-me .left{
+    flex-direction:column;
+    height:auto;
+  }
+
+  section.contact .contact-me .left .card{
+    max-width:100%;
+  }
+
 }
 
 @media (max-width: 576px){
