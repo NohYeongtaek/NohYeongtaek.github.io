@@ -71,12 +71,12 @@ for(let i = 0; i < scollMoveEl.length; i++){
 /* 메인 이미지 배경 변경 */
 const images = [
   'images/me5.jpg',
-  'images/me.jpg',
-  'images/me7.jpg',
+  'images/me.JPG',
+  'images/me7.JPG',
   'images/me2.jpg',
-  'images/me6.jpg',
-  'images/me3.jpg',
-  'images/me4.jpg',
+  'images/me6.JPG',
+  'images/me3.JPG',
+  'images/me4.JPG',
 ]
 let currentIndex = 0;
 const mainSection = document.querySelector('main');
