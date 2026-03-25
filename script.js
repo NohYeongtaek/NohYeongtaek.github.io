@@ -70,8 +70,9 @@ for(let i = 0; i < scollMoveEl.length; i++){
 /* main_image.js */
 /* 메인 이미지 배경 변경 */
 const images = [
-  'images/me.jpg',
   'images/me5.jpg',
+  'images/me.jpg',
+  'images/me7.jpg',
   'images/me2.jpg',
   'images/me6.jpg',
   'images/me3.jpg',
