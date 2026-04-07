@@ -183,7 +183,7 @@ section .about-self .left img{
 }
 /* 본문 너비 절반 지정 & 오른쪽 배치 */
 section .about-self .right{
-  width:600px;
+  width:fit-content; /* 글자 크기에 맞게 너비 자동 조절 */
   float:none; /* float 속성 제거 */
   padding:0;
 }
