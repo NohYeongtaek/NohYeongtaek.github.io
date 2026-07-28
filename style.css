@@ -76,10 +76,11 @@ main h4{
   font-size:4.0rem;
 }
 main h2{
-  font-size:2.5rem;
+  font-size: clamp(1rem, 4.5vw, 2.5rem); /* 화면이 좁아지면 글자 크기도 줄여서 한 줄 유지 */
   margin:2rem 0;
   letter-spacing:3px;
   font-family:'Varela Round', sans-serif; /* 웹 폰트 추가 */
+  white-space: nowrap; /* 타이핑 텍스트가 길어도 한 줄로 유지 */
 }
 main p{
   max-width:500px;
@@ -192,6 +193,11 @@ section .about-self .right h3{
   font-size:2.25rem;
   margin-bottom:1rem;
 }
+/* 자기소개 중간 문장이 길어도 줄바꿈 없이 한 줄로 표시되도록 화면 너비에 맞춰 축소 */
+section .about-self .right h3:nth-of-type(2){
+  font-size: clamp(0.85rem, 3.6vw, 2.25rem);
+  white-space: nowrap;
+}
 /* 본문 오른쪽 h3 태그의 strong 태그 색상 강조 */
 section .about-self .right h3 strong{
   color:#ed4848;
@@ -200,11 +206,26 @@ section .about-self .right h3 strong{
 section .about-self .right p{
   font-size:1.1rem;
   margin:1rem 0;
+  word-break: keep-all; /* 단어(어절) 중간에서 줄바꿈되지 않도록 함 */
+  text-wrap: pretty; /* 마지막 한두 글자만 외로이 다음 줄로 넘어가는 현상 방지 (지원 브라우저 한정) */
+}
+/* 아이콘들을 세로 중앙 기준으로 정렬 */
+section .about-self .right .social{
+  display: flex;
+  align-items: center;
 }
 /* 본문 오른쪽의 아이콘 폰트 크기와 여백 지정 */
 section .about-self .right .social a{
   font-size:3rem;
   margin-right:0.2rem;
+  display: flex;
+  align-items: center;
+}
+/* velog 아이콘 이미지를 github/notion 폰트 아이콘과 같은 크기로 맞춤 */
+section .about-self .right .social img{
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
 }
 /* 캡션 내부 태그들을 감싸는 컨테이너 */
 section.portfolio .portfolio-caption .tags {
@@ -397,6 +418,10 @@ section.portfolio .portfolio-caption .tags span {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+/* 글씨가 긴 태그는 폰트 크기를 줄여서 잘리지 않게 함 */
+section.portfolio .portfolio-caption .tags span.tag-long {
+  font-size: 0.65rem;
 }
 /* 날짜 텍스트 */
 section.portfolio .portfolio-created {
