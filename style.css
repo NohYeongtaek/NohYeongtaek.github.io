@@ -431,6 +431,17 @@ section.portfolio .portfolio-created {
   padding-top: 0.5rem;
   margin-top: auto;       /* 위쪽 태그가 적어도 날짜는 항상 바닥에 붙게 함 */
 }
+/* 스토어 링크 (출시된 앱만) */
+section.portfolio .portfolio-created a.store-link{
+  display:block;
+  margin-bottom:0.3rem;
+  font-size:0.9rem;
+  font-weight:bold;
+  color:#ff6a6a;
+}
+section.portfolio .portfolio-created a.store-link:hover{
+  text-decoration:underline;
+}
 section.portfolio .portfolio-created span{
   display:block; /* span이 인라인 요소이므로 block으로 변경하여 margin-top: auto가 제대로 작동하도록 함 */
   color: #fff;
